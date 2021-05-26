@@ -8,7 +8,7 @@ cache_container="$2/icu"
 cache="$cache_container/$ICU_VERSION"
 buildpack=`cd $(dirname $0); cd ..; pwd`
 
-icu_url = "https://github.com/unicode-org/icu/archive/refs/tags/release-${ICU_VERSION}.tar.gz"
+icu_url="https://github.com/unicode-org/icu/archive/refs/tags/release-${ICU_VERSION}.tar.gz"
 
 if [[ -d "$cache" ]]; then
   echo "Using cached build of ICU"
